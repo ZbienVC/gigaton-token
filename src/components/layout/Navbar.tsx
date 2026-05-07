@@ -25,10 +25,10 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center gap-3 flex-shrink-0">
         <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0"
-          style={{ border: '1px solid rgba(0,136,204,0.4)', boxShadow: '0 0 12px rgba(0,136,204,0.3)' }}>
-          <img src="/gigaton-logo.jpg" alt="GIGATON" className="w-full h-full object-cover" />
+          style={{ border: '1px solid rgba(0,136,204,0.4)', boxShadow: '0 0 12px rgba(0,136,204,0.3)', minWidth: 36, minHeight: 36 }}>
+          <img src="/gigaton-logo.jpg" alt="GIGATON" className="w-full h-full object-cover object-center" />
         </div>
-        <span className="text-lg font-black tracking-tight font-[family-name:var(--font-fredoka)]" style={{ color: '#E8F4FD' }}>
+        <span className="text-lg font-black tracking-tight font-[family-name:var(--font-fredoka)] whitespace-nowrap" style={{ color: '#E8F4FD' }}>
           GIGATON
         </span>
       </div>

@@ -105,14 +105,14 @@ export default function Hero() {
 
           {/* Stats row */}
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.1 }}
-            className="flex flex-wrap gap-3">
+            className="grid grid-cols-2 sm:flex sm:flex-wrap gap-3 w-full max-w-sm lg:max-w-none">
             {[
               { label: "Supply", value: "1,000,000,000" },
               { label: "Tax", value: "0%" },
               { label: "LP", value: "Locked 🔒" },
               { label: "Chain", value: "TON 🔷" },
             ].map((s, i) => (
-              <div key={i} className="px-4 py-2 rounded-xl flex flex-col items-center"
+              <div key={i} className="px-4 py-2 rounded-xl flex flex-col items-center flex-1"
                 style={{ background: 'rgba(0,136,204,0.06)', border: '1px solid rgba(0,136,204,0.15)' }}>
                 <span className="text-xs uppercase tracking-widest font-bold" style={{ color: 'rgba(232,244,253,0.35)' }}>{s.label}</span>
                 <span className="font-bold text-sm" style={{ color: '#E8F4FD' }}>{s.value}</span>
