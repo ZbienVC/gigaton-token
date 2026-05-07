@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { Copy } from "lucide-react";
 import { useState } from "react";
@@ -8,26 +9,59 @@ export default function Navbar() {
   const [copied, setCopied] = useState(false);
   const CA = "PLACEHOLDER_CA";
   const handleCopy = () => { navigator.clipboard.writeText(CA); setCopied(true); setTimeout(() => setCopied(false), 2000); };
+
   return (
-    <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 px-4 md:px-8 py-4 flex items-center justify-between mx-4 md:mx-auto max-w-7xl mt-4 rounded-2xl"
-      style={{ background: 'rgba(2,12,20,0.85)', backdropFilter: 'blur(20px)', border: '1px solid rgba(0,136,204,0.18)' }}>
-      <div className="flex items-center gap-2">
-        <span className="text-2xl font-bold tracking-tight font-[family-name:var(--font-fredoka)] glow-text" style={{ color: '#E8F4FD' }}>$GIGATON</span>
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-0 flex items-center justify-between w-full h-16"
+      style={{
+        background: 'rgba(2,8,16,0.92)',
+        backdropFilter: 'blur(24px)',
+        borderBottom: '1px solid rgba(0,136,204,0.1)',
+      }}
+    >
+      {/* Logo */}
+      <div className="flex items-center gap-3 flex-shrink-0">
+        <div className="w-8 h-8 rounded-lg flex items-center justify-center"
+          style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)' }}>
+          <span className="text-xs font-black text-white">GT</span>
+        </div>
+        <span className="text-lg font-black tracking-tight font-[family-name:var(--font-fredoka)]" style={{ color: '#E8F4FD' }}>
+          GIGATON
+        </span>
       </div>
-      <div className="hidden md:flex items-center gap-6 text-sm font-medium" style={{ color: 'rgba(232,244,253,0.7)' }}>
-        <Link href="#story" className="hover:text-[#0088CC] transition-colors">Story</Link>
-        <Link href="#tokenomics" className="hover:text-[#0088CC] transition-colors">Tokenomics</Link>
-        <Link href="#chart" className="hover:text-[#0088CC] transition-colors">Chart</Link>
-        <Link href="#gallery" className="hover:text-[#0088CC] transition-colors">Gallery</Link>
+
+      {/* Nav links */}
+      <div className="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest">
+        {[
+          { label: "Story", href: "#story" },
+          { label: "Giganomics", href: "#tokenomics" },
+          { label: "Chart", href: "#chart" },
+          { label: "Memes", href: "#gallery" },
+          { label: "Community", href: "#why" },
+          { label: "How to Buy", href: "#how-to-buy" },
+        ].map((item) => (
+          <Link key={item.label} href={item.href}
+            className="transition-colors hover:text-[#0088CC]"
+            style={{ color: 'rgba(232,244,253,0.5)' }}>
+            {item.label}
+          </Link>
+        ))}
       </div>
+
+      {/* Right: CA copy + Buy */}
       <div className="flex items-center gap-3">
-        <button onClick={handleCopy} className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-mono transition-colors"
-          style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.25)', color: '#0088CC' }}>
-          {copied ? "Copied!" : "CA"}<Copy className="w-3 h-3" />
+        <button onClick={handleCopy}
+          className="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-mono transition-all hover:opacity-80"
+          style={{ background: 'rgba(0,136,204,0.07)', border: '1px solid rgba(0,136,204,0.2)', color: 'rgba(0,136,204,0.8)' }}>
+          <Copy className="w-3 h-3" />
+          {copied ? "Copied!" : "Copy CA"}
         </button>
-        <a href="https://dedust.io" target="_blank" rel="noreferrer" className="px-5 py-2 rounded-xl font-bold text-white shadow-lg transition-all hover:scale-105"
-          style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)', boxShadow: '0 4px 20px rgba(0,136,204,0.3)' }}>
+        <a href="https://dedust.io" target="_blank" rel="noreferrer"
+          className="px-5 py-2 rounded-lg font-bold text-sm text-white transition-all hover:opacity-90 hover:scale-105"
+          style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)', boxShadow: '0 2px 16px rgba(0,136,204,0.25)' }}>
           Buy $GIGATON
         </a>
       </div>
