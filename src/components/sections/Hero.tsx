@@ -65,6 +65,15 @@ export default function Hero() {
           <Copy className="w-4 h-4 transition-colors" style={{ color: copied ? '#0088CC' : 'rgba(232,244,253,0.3)' }} />
         </div>
       </motion.div>
+
+      {/* Gigachad hero image — bottom right */}
+      <motion.div
+        animate={{ y: [0, -18, 0] }}
+        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -bottom-10 md:bottom-0 right-0 md:right-[4%] w-48 md:w-72 opacity-30 md:opacity-50 pointer-events-none overflow-hidden rounded-t-3xl"
+      >
+        <img src="/gigaton-3.jpg" alt="Gigachad" className="w-full h-full object-cover object-top" style={{ maskImage: 'linear-gradient(to top, transparent 0%, black 40%)', WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 40%)' }} />
+      </motion.div>
     </section>
   );
 }
