@@ -17,8 +17,19 @@ export default function Hero() {
   return (
     <section className="min-h-screen pt-28 pb-0 px-4 md:px-8 flex flex-col items-center justify-start relative overflow-hidden text-center z-10">
 
-      {/* Background gradient */}
-      <div className="absolute inset-0 pointer-events-none z-0">
+      {/* Background — subtle logo banner watermark */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        {/* Logo watermark — wide, centered, very faint */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img
+            src="/gigaton-logo.jpg"
+            alt=""
+            className="w-full max-w-5xl object-contain opacity-[0.04] select-none"
+            style={{ filter: 'blur(1px) saturate(0.5) brightness(1.5)' }}
+          />
+        </div>
+        {/* Gradient overlays to fade the edges */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 20%, #020C14 75%)' }} />
         <div className="absolute top-0 left-0 right-0 h-[70%] opacity-30"
           style={{ background: 'linear-gradient(to bottom, rgba(0,136,204,0.15) 0%, transparent 100%)' }} />
       </div>
