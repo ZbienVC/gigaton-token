@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Crown, Target, Eye, Send, Hash } from "lucide-react";
+import { Crown, Target, Eye, Send } from "lucide-react";
 
 export default function Narrative() {
   const points = [
@@ -99,7 +99,8 @@ export default function Narrative() {
               <a href="https://x.com/giggaton?s=21&t=9s3gbKuoRlIQ5nUEVhx4fQ" target="_blank" rel="noreferrer"
                 className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all hover:scale-105"
                 style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.25)', color: '#0088CC' }}>
-                <Hash className="w-4 h-4" /> Twitter / X
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                Twitter / X
               </a>
             </div>
           </div>

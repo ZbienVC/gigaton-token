@@ -1,5 +1,5 @@
 "use client";
-import { Send, Hash } from "lucide-react";
+import { Send } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden z-10" style={{ borderTop: '1px solid rgba(0,136,204,0.12)', background: '#010810' }}>
@@ -14,7 +14,9 @@ export default function Footer() {
           <p className="text-xs font-bold uppercase tracking-widest" style={{ color: 'rgba(232,244,253,0.3)' }}>Community</p>
           <div className="flex items-center gap-4">
             <a href="https://t.me/+9AnxRg7pxQFhN2Yx" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110" style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}><Send className="w-5 h-5" /></a>
-            <a href="https://x.com/giggaton?s=21&t=9s3gbKuoRlIQ5nUEVhx4fQ" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110" style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}><Hash className="w-5 h-5" /></a>
+            <a href="https://x.com/giggaton?s=21&t=9s3gbKuoRlIQ5nUEVhx4fQ" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110" style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
           </div>
         </div>
       </div>
