@@ -26,7 +26,7 @@ export default function Navbar() {
           style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.25)', color: '#0088CC' }}>
           {copied ? "Copied!" : "CA"}<Copy className="w-3 h-3" />
         </button>
-        <a href="#how-to-buy" className="px-5 py-2 rounded-xl font-bold text-white shadow-lg transition-all hover:scale-105"
+        <a href="https://dedust.io" target="_blank" rel="noreferrer" className="px-5 py-2 rounded-xl font-bold text-white shadow-lg transition-all hover:scale-105"
           style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)', boxShadow: '0 4px 20px rgba(0,136,204,0.3)' }}>
           Buy $GIGATON
         </a>

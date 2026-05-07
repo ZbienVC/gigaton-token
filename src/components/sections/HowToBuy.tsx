@@ -5,7 +5,7 @@ import { Wallet, Search, Coins, Sparkles } from "lucide-react";
 export default function HowToBuy() {
   const steps = [
     { num: "01", title: "Get Tonkeeper Wallet", text: "Download Tonkeeper or any TON-compatible wallet. Fund it with TON from any exchange.", icon: <Wallet className="w-7 h-7" style={{ color: '#0088CC' }} />, glow: 'rgba(0,136,204,0.07)', border: 'rgba(0,136,204,0.2)' },
-    { num: "02", title: "Go to STON.fi or DeDust", text: "Navigate to ston.fi or dedust.io and connect your TON wallet.", icon: <Search className="w-7 h-7" style={{ color: '#00B4FF' }} />, glow: 'rgba(0,180,255,0.07)', border: 'rgba(0,180,255,0.2)' },
+    { num: "02", title: "Go to DeDust.io", text: "Navigate to dedust.io and connect your TON wallet. DeDust is the go-to DEX on TON.", icon: <Search className="w-7 h-7" style={{ color: '#00B4FF' }} />, glow: 'rgba(0,180,255,0.07)', border: 'rgba(0,180,255,0.2)' },
     { num: "03", title: "Paste CA", text: "Search for $GIGATON or paste the contract address to find the right token.", icon: <Coins className="w-7 h-7" style={{ color: '#005F8F' }} />, glow: 'rgba(0,95,143,0.07)', border: 'rgba(0,95,143,0.2)' },
     { num: "04", title: "Own the Force", text: "Swap TON for $GIGATON. Hold the most massive force on the blockchain.", icon: <Sparkles className="w-7 h-7" style={{ color: '#0088CC' }} />, glow: 'rgba(0,136,204,0.07)', border: 'rgba(0,136,204,0.2)' },
   ];

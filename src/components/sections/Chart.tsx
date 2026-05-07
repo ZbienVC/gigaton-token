@@ -29,7 +29,7 @@ export default function Chart() {
           <a href="#how-to-buy"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all hover:opacity-80"
             style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)', color: '#E8F4FD' }}>
-            Buy $GIGATON ↗
+            Buy $GIGATON on DeDust ↗
           </a>
         </motion.div>
       </div>
