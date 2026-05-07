@@ -96,7 +96,7 @@ export default function Narrative() {
                 style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)', color: '#fff', boxShadow: '0 4px 20px rgba(0,136,204,0.3)' }}>
                 <Send className="w-4 h-4" /> Telegram
               </a>
-              <a href="#" target="_blank" rel="noreferrer"
+              <a href="https://x.com/giggaton?s=21&t=9s3gbKuoRlIQ5nUEVhx4fQ" target="_blank" rel="noreferrer"
                 className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all hover:scale-105"
                 style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.25)', color: '#0088CC' }}>
                 <Hash className="w-4 h-4" /> Twitter / X
