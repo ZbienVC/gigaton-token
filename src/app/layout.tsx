@@ -1,0 +1,28 @@
+import type { Metadata } from "next";
+import { Inter, Fredoka } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Particles from "@/components/ui/Particles";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const fredoka = Fredoka({ subsets: ["latin"], variable: "--font-fredoka" });
+
+export const metadata: Metadata = {
+  title: "$GIGATON — The Biggest Force on TON",
+  description: "The most massive force on the TON blockchain. Unstoppable. Inevitable.",
+  icons: { icon: "/favicon.ico" },
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body className={`${inter.variable} ${fredoka.variable} font-sans antialiased mystical-bg text-white min-h-screen flex flex-col`}>
+        <Particles />
+        <Navbar />
+        <main className="flex-1 relative z-10">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
