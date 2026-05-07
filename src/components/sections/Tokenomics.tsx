@@ -12,13 +12,17 @@ export default function Tokenomics() {
   return (
     <section id="tokenomics" className="py-24 px-4 md:px-8 relative z-10">
       <div className="max-w-5xl mx-auto text-center">
+        <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
+          className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: '#0088CC' }}>
+          Giganomics
+        </motion.p>
         <motion.h2 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           className="text-3xl md:text-5xl font-bold font-[family-name:var(--font-fredoka)] glow-text mb-4" style={{ color: '#E8F4FD' }}>
-          Tokenomics
+          Project Tokenomics
         </motion.h2>
         <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
           className="mb-16 font-medium" style={{ color: 'rgba(232,244,253,0.5)' }}>
-          Massive supply. Zero friction. Pure momentum.
+          Simple. Transparent. Built for chads.
         </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((c, i) => (
