@@ -91,7 +91,7 @@ export default function Narrative() {
               </p>
             </div>
             <div className="flex items-center gap-4 flex-shrink-0">
-              <a href="#" target="_blank" rel="noreferrer"
+              <a href="https://t.me/+9AnxRg7pxQFhN2Yx" target="_blank" rel="noreferrer"
                 className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)', color: '#fff', boxShadow: '0 4px 20px rgba(0,136,204,0.3)' }}>
                 <Send className="w-4 h-4" /> Telegram

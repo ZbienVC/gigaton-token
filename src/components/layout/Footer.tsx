@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4">
           <p className="text-xs font-bold uppercase tracking-widest" style={{ color: 'rgba(232,244,253,0.3)' }}>Community</p>
           <div className="flex items-center gap-4">
-            <a href="#" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110" style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}><Send className="w-5 h-5" /></a>
+            <a href="https://t.me/+9AnxRg7pxQFhN2Yx" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110" style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}><Send className="w-5 h-5" /></a>
             <a href="#" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-110" style={{ background: 'rgba(0,136,204,0.08)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}><Hash className="w-5 h-5" /></a>
           </div>
         </div>
