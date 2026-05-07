@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [copied, setCopied] = useState(false);
-  const CA = "PLACEHOLDER_CA";
+  const CA = "EQAOE9fCXU8NyFebcX1YhGgImGzO1qbUcfB9gEmZC8mEYJXz";
   const handleCopy = () => { navigator.clipboard.writeText(CA); setCopied(true); setTimeout(() => setCopied(false), 2000); };
 
   return (
@@ -59,7 +59,7 @@ export default function Navbar() {
           <Copy className="w-3 h-3" />
           {copied ? "Copied!" : "Copy CA"}
         </button>
-        <a href="https://dedust.io" target="_blank" rel="noreferrer"
+        <a href="https://groypfi.io/token/EQAOE9fCXU8NyFebcX1YhGgImGzO1qbUcfB9gEmZC8mEYJXz" target="_blank" rel="noreferrer"
           className="px-5 py-2 rounded-lg font-bold text-sm text-white transition-all hover:opacity-90 hover:scale-105"
           style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)', boxShadow: '0 2px 16px rgba(0,136,204,0.25)' }}>
           Buy $GIGATON

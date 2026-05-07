@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start gap-4">
           <h2 className="text-4xl font-bold font-[family-name:var(--font-fredoka)] glow-text" style={{ color: '#E8F4FD' }}>GIGATON</h2>
           <p className="text-sm max-w-sm text-center md:text-left font-medium" style={{ color: 'rgba(232,244,253,0.45)' }}>The most massive force on the TON blockchain. Unstoppable. Inevitable. Forever on-chain.</p>
-          <div className="text-xs font-mono px-4 py-2 rounded-xl mt-1 break-all md:break-normal" style={{ background: 'rgba(0,136,204,0.07)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}>PLACEHOLDER_CA</div>
+          <div className="text-xs font-mono px-4 py-2 rounded-xl mt-1 break-all md:break-normal" style={{ background: 'rgba(0,136,204,0.07)', border: '1px solid rgba(0,136,204,0.2)', color: '#0088CC' }}>EQAOE9fCXU8NyFebcX1YhGgImGzO1qbUcfB9gEmZC8mEYJXz</div>
         </div>
         <div className="flex flex-col items-center gap-4">
           <p className="text-xs font-bold uppercase tracking-widest" style={{ color: 'rgba(232,244,253,0.3)' }}>Community</p>

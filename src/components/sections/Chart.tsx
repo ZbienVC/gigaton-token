@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-const PAIR_ADDRESS = "PLACEHOLDER_PAIR";
+const PAIR_ADDRESS = "EQAOE9fCXU8NyFebcX1YhGgImGzO1qbUcfB9gEmZC8mEYJXz";
 const DEXSCREENER_URL = `https://dexscreener.com/ton/${PAIR_ADDRESS}`;
 const EMBED_URL = `https://dexscreener.com/ton/${PAIR_ADDRESS}?embed=1&loadChartSettings=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15`;
 

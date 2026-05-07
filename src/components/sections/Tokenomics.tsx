@@ -2,10 +2,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "1,000,000,000", label: "Supply" },
-  { value: "Immutable", label: "Contract" },
-  { value: "Burnt", label: "Liquidity Pool" },
-  { value: "0%", label: "Tax" },
+  { value: "1,000,000,000", label: "Total Supply" },
+  { value: "0%", label: "Buy & Sell Tax" },
+  { value: "Burnt 🔥", label: "Liquidity Pool" },
+  { value: "Groypfi", label: "Launched On" },
 ];
 
 export default function Tokenomics() {
