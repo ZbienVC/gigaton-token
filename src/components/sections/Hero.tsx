@@ -17,21 +17,29 @@ export default function Hero() {
   return (
     <section className="min-h-screen pt-28 pb-0 px-4 md:px-8 flex flex-col items-center justify-start relative overflow-hidden text-center z-10">
 
-      {/* Background — subtle logo banner watermark */}
+      {/* Background — hero banner image + overlays */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* Logo watermark — wide, centered, very faint */}
+        {/* Banner image */}
+        <img
+          src="/gigaton-banner.jpg"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-center select-none"
+          style={{ opacity: 0.18, filter: 'saturate(1.2) brightness(0.8)' }}
+        />
+        {/* Subtle logo watermark centered */}
         <div className="absolute inset-0 flex items-center justify-center">
           <img
             src="/gigaton-logo.jpg"
             alt=""
-            className="w-full max-w-5xl object-contain opacity-[0.04] select-none"
-            style={{ filter: 'blur(1px) saturate(0.5) brightness(1.5)' }}
+            className="w-full max-w-4xl object-contain select-none"
+            style={{ opacity: 0.03, filter: 'blur(1px)' }}
           />
         </div>
-        {/* Gradient overlays to fade the edges */}
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 20%, #020C14 75%)' }} />
-        <div className="absolute top-0 left-0 right-0 h-[70%] opacity-30"
-          style={{ background: 'linear-gradient(to bottom, rgba(0,136,204,0.15) 0%, transparent 100%)' }} />
+        {/* Edge fade + color grading */}
+        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, transparent 30%, #020C14 80%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(2,12,20,0.3) 0%, rgba(2,12,20,0.6) 100%)' }} />
+        <div className="absolute top-0 left-0 right-0 h-[60%] opacity-20"
+          style={{ background: 'linear-gradient(to bottom, rgba(0,136,204,0.2) 0%, transparent 100%)' }} />
       </div>
 
       {/* Main content wrapper — side by side on desktop */}
