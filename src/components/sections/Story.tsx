@@ -40,7 +40,7 @@ export default function Story() {
           <motion.div initial={{ opacity: 0, scale: 0.88 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.9 }}
             className="h-80 md:h-[480px] rounded-3xl overflow-hidden relative"
             style={{ border: '1px solid rgba(0,136,204,0.18)' }}>
-            <img src="/gigaton-1.jpg" alt="Gigachad" className="absolute inset-0 w-full h-full object-cover object-top" />
+            <img src="/gigaton-logo.jpg" alt="GIGATON" className="absolute inset-0 w-full h-full object-cover object-center" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(2,12,20,0.85) 0%, transparent 60%)' }} />
             <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 50% 30%, rgba(0,180,255,0.08) 0%, transparent 60%)' }} />
             <div className="absolute bottom-5 left-6">

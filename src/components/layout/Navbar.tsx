@@ -24,9 +24,9 @@ export default function Navbar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-3 flex-shrink-0">
-        <div className="w-8 h-8 rounded-lg flex items-center justify-center"
-          style={{ background: 'linear-gradient(135deg, #0088CC, #005F8F)' }}>
-          <span className="text-xs font-black text-white">GT</span>
+        <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0"
+          style={{ border: '1px solid rgba(0,136,204,0.4)', boxShadow: '0 0 12px rgba(0,136,204,0.3)' }}>
+          <img src="/gigaton-logo.jpg" alt="GIGATON" className="w-full h-full object-cover" />
         </div>
         <span className="text-lg font-black tracking-tight font-[family-name:var(--font-fredoka)]" style={{ color: '#E8F4FD' }}>
           GIGATON

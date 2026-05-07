@@ -115,12 +115,14 @@ export default function Hero() {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             className="relative rounded-3xl overflow-hidden"
             style={{
-              height: 500,
-              border: '1px solid rgba(0,136,204,0.2)',
-              boxShadow: '0 0 60px rgba(0,136,204,0.12), 0 0 120px rgba(0,136,204,0.06)',
+              height: 440,
+              width: 440,
+              border: '2px solid rgba(0,136,204,0.3)',
+              boxShadow: '0 0 80px rgba(0,136,204,0.2), 0 0 160px rgba(0,136,204,0.08)',
+              borderRadius: '50%',
             }}
           >
-            <img src="/gigaton-4.jpg" alt="Gigachad" className="w-full h-full object-cover object-top" />
+            <img src="/gigaton-logo.jpg" alt="GIGATON" className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(2,12,20,0.7) 0%, transparent 50%)' }} />
             {/* Blue laser eye glow overlay */}
             <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 50% 35%, rgba(0,180,255,0.12) 0%, transparent 55%)' }} />
